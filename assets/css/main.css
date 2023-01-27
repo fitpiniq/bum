@@ -1,0 +1,276 @@
+/* HEADER */
+.header {
+    width: 100%;
+    height: 500px;
+    background: url("../images/header-bg.png") center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #FFF;
+    text-align: center;
+}
+
+h1 .light-small {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+@media only screen and (max-width: 480px) {
+    .header {
+        height: 300px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h1 .light-small {
+        font-size: 16px;
+    }
+}
+/* /HEADER */
+
+
+
+/* APARTMENTS */
+.apartments__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 450px);
+    grid-gap: 20px;
+}
+
+.apartments__item {
+    text-align: center;
+}
+
+.apartments__item:hover {
+    box-shadow: rgba(17, 12, 46, 0.15) 0 48px 100px 0;
+}
+
+.apartments__info {
+    margin: 15px 0;
+}
+
+h3 {
+    font-weight: lighter;
+}
+
+.apartments__address {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.apartments-price {
+    font-size: 32px;
+}
+
+@media only screen and (max-width: 480px) {
+    .apartments__items {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 450px);
+    }
+}
+/* /APARTMENTS */
+
+
+
+/* ASK */
+.ask {
+    text-align: center;
+}
+
+.ask__title {
+    font-weight: lighter;
+}
+
+.ask__link button {
+    color: #FFF;
+    background: #45B1FF;
+    width: 50%;
+    height: 50px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.ask__subtitle {
+    font-size: 14px;
+    margin-top: 20px;
+}
+/* /ASK */
+
+
+
+/* TYPES */
+.types__items {
+    display: grid;
+    grid-template-columns: 460px 390px;
+    grid-template-rows: 400px 200px;
+    grid-gap: 20px;
+}
+
+.types__item:nth-of-type(1) {
+    grid-column: 1 / 3;
+    background: url("../images/types/type-image_1.png") center no-repeat;
+    background-size: cover;
+}
+
+.types__item:nth-of-type(2) {
+    padding: 0 20px;
+    grid-column: 3;
+    grid-row: 1 / 3;
+    font-size: 20px;
+    line-height: 2;
+}
+
+.types__item:nth-of-type(3) {
+    grid-column: 1;
+    grid-row: 2;
+    background: url("../images/types/type-image_2.png") center no-repeat;
+    background-size: cover;
+}
+
+.types__item:nth-of-type(4) {
+    grid-column: 2;
+    grid-row: 2;
+    background: url("../images/types/type-image_3.png") center no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 480px) {
+    .types {
+        display: none;
+    }
+}
+/* /TYPES */
+
+
+
+/* AGENTS */
+.agents__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 505px;
+    column-gap: 20px;
+}
+
+.agents__item hr {
+    margin: 10px 0;
+    border: 1px solid #c5c5c5;
+}
+
+.agents__info {
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 480px) {
+    .agents__items {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 505px;
+        row-gap: 10px;
+    }
+}
+/* /AGENTS */
+
+
+
+/* REVIEWS */
+.reviews__items {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    row-gap: 20px;
+}
+
+.reviews__item {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    column-gap: 20px;
+    background: #fafafa;
+}
+
+.reviews__info {
+    margin-top: 20px;
+}
+
+.reviews__name {
+    font-size: 24px;
+}
+
+.reviews__info-text {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 480px) {
+    .reviews__items {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        row-gap: 20px;
+    }
+
+    .reviews__item {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 20px;
+        background: #fafafa;
+        padding-bottom: 20px;
+    }
+
+    .reviews__item img {
+        width: 100%;
+    }
+}
+/* /REVIEWS */
+
+
+
+/* FOOTER */
+.footer {
+    background: #fafafa;
+    height: 250px;
+}
+
+.footer__content {
+    display: flex;
+    align-items: center;
+    height: 250px;
+}
+
+.footer__info {
+    text-align: center;
+    width: 30%;
+    margin: auto;
+    opacity: .5;
+    font-size: 13px;
+}
+
+.footer__call {
+    font-size: 28px;
+}
+
+@media only screen and (max-width: 480px) {
+    .footer__content {
+        display: block;
+    }
+
+    .footer__content img {
+        margin: 55px 25px;
+    }
+
+    .footer__info {
+        width: 90%;
+    }
+
+    .footer__call {
+        display: none;
+    }
+}
+/* /FOOTER */
